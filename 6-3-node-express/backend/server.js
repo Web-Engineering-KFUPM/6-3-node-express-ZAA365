@@ -61,11 +61,36 @@ Syntax hint:
    app.use(morgan("dev"));*/
    import morgan from "morgan";
    app.use(morgan("dev"));
+/*/*
+--------------------------------
+TODO 6.1: Root Route
+--------------------------------
 
+Path: "/"
+
+Goal:
+Send plain text response
+
+Syntax hint:*/
 // TODO 6.1: Create root route "/"
+app.get("/", (req, res) => {
+     res.send("Hello, World!");
+   });
+/*--------------------------------
+TODO 6.2: Quote API Route
+--------------------------------
 
+Path: "/api/quote"
 
+Goal:
+Return a random quote as JSON
+
+Syntax hint:*/
 // TODO 6.2: Create "/api/quote" route
+app.get("/api/quote", (req, res) => {
+     const quote = "This is a quote!";
+     res.json({ quote });
+   });
 
 
 // TODO 7: Start server using app.listen
