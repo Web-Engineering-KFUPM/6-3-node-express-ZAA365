@@ -1,7 +1,27 @@
 // TODO 1: Import and Create express app instance
+/*TODO 1:
+Initialize Express App
+-------------------------------------------------------------------
+
+In server.js, set up the Express server.
+
+Tasks:
+- Import express
+- Create the app
+- Define PORT
+
+Hint:
+- call the imported express function
+
+Syntax hint:*/
+   import express from "express";
+    const app = express();
+    const PORT = 3000
 
 // TODO 1: Define server port
-
+app.listen(PORT, () => {
+  console.log(`app listening at http://localhost:${PORT}`);
+});
 
 // TODO 4: Import and Apply CORS middleware
 
