@@ -40,7 +40,27 @@ Syntax hint:*/
 
 
 // TODO 5: Import and apply Morgan middleware
+/*TODO 5:
+Add Morgan Logger
+-------------------------------------------------------------------
 
+In server.js, add morgan to log incoming requests.
+
+Tasks:
+- Import morgan
+- Use it as middleware
+
+Goal:
+Log request details in the terminal whenever the server receives a request.
+
+Hint:
+- Use the "dev" logger format
+
+Syntax hint:
+   import morgan from "morgan";
+   app.use(morgan("dev"));*/
+   import morgan from "morgan";
+   app.use(morgan("dev"));
 
 // TODO 6.1: Create root route "/"
 
