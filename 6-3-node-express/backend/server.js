@@ -59,6 +59,10 @@ Syntax hint:
    app.use(morgan("dev"));*/
    import morgan from "morgan";
    app.use(morgan("dev"));
+
+// TODO 3: Import getRandomQuote function
+import { getRandomQuote } from "./quotes.js";
+
 /*/*
 --------------------------------
 TODO 6.1: Root Route
@@ -72,7 +76,7 @@ Send plain text response
 Syntax hint:*/
 // TODO 6.1: Create root route "/"
 app.get("/", (req, res) => {
-     res.send("Hello, World!");
+     res.send("Welcome to the Quote API!");
    });
 /*--------------------------------
 TODO 6.2: Quote API Route
@@ -86,7 +90,7 @@ Return a random quote as JSON
 Syntax hint:*/
 // TODO 6.2: Create "/api/quote" route
 app.get("/api/quote", (req, res) => {
-     const quote = "This is a quote!";
+     const quote = getRandomQuote();
      res.json({ quote });
    });
 
