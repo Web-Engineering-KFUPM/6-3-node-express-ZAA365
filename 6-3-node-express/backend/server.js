@@ -1,6 +1,5 @@
 // TODO 1: Import and Create express app instance
-/*TODO 1:
-Initialize Express App
+/*TODO 1:Initialize Express App
 -------------------------------------------------------------------
 
 In server.js, set up the Express server.
