@@ -23,6 +23,20 @@ app.listen(PORT, () => {
 });
 
 // TODO 4: Import and Apply CORS middleware
+/*-------------------------------------------------------------------
+TODO 4:
+Enable CORS
+-------------------------------------------------------------------
+
+In server.js, allow frontend to access backend.
+
+Tasks:
+- Import cors
+- Use it as middleware
+
+Syntax hint:*/
+   import cors from "cors";
+   app.use(cors() );
 
 
 // TODO 5: Import and apply Morgan middleware
