@@ -18,9 +18,7 @@ Syntax hint:*/
     const PORT = 3000
 
 // TODO 1: Define server port
-app.listen(PORT, () => {
-  console.log(`app listening at http://localhost:${PORT}`);
-});
+
 
 // TODO 4: Import and Apply CORS middleware
 /*-------------------------------------------------------------------
@@ -94,3 +92,14 @@ app.get("/api/quote", (req, res) => {
 
 
 // TODO 7: Start server using app.listen
+/*TODO 7:
+Start the Server
+-------------------------------------------------------------------
+
+In server.js, start the server.
+
+Syntax hint:
+   app.listen(____, () => {
+     console.log(`____________________________`);
+   });*/
+app.listen(PORT, () => {console.log(`Server is running at http://localhost:${PORT}`);});
